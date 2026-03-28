@@ -7,11 +7,14 @@ UM-Bridge is a software framework that provides a unified interface for connecti
 
 It allows seamless integration of models and UQ libraries, creating shareable containerized models and benchmarks, and scaling computations to supercomputers and cloud infrastructure with minimal effort. See Figure 1 for an illustration of the UM-Bridge framework.
 
-<figure>
-<img src="figures/umbridge.jpg" alt="figure" width="600"/>
-<figcaption>Figure 1. The UM-Bridge framework, a unified interface for connecting advanced models and simulations with UQ and optimization software. Image from the <a href="https://um-bridge-benchmarks.readthedocs.io/en/docs/">UM-Bridge documentation</a>.
-</figcaption>
-</figure>
+
+```{figure} figures/umbridge.jpg
+:label: FigureUmBridge
+:alt: Figure UM-Bridge
+:width: 600px
+:align: center
+The UM-Bridge framework, a unified interface for connecting advanced models and simulations with UQ and optimization software. Image credit: the [UM-Bridge documentation](https://um-bridge-benchmarks.readthedocs.io/en/docs/) and [@seelinger2025democratizing].
+```
 
 ## CUQIpy-UMBridge plugin
 We developed the [CUQIpy-UMBridge](https://github.com/CUQI-DTU/CUQIpy-UMBridge) plugin to seamlessly enable the use of CUQIpy within the UM-Bridge workflow. The plugin provides two main modules:
@@ -21,7 +24,7 @@ We developed the [CUQIpy-UMBridge](https://github.com/CUQI-DTU/CUQIpy-UMBridge) 
 
 ## Contributing to "democratizing uncertainty quantification"
 
-As part of the UM-Bridge project, Seelinger et al. (2025) {cite}`seelinger2025democratizing` presented UM-Bridge as a tool for "democratizing uncertainty quantification". The paper presents the UM-Bridge framework and its capabilities, provides a list of UQ software tools that are compatible with UM-Bridge, including CUQIpy, and demonstrates how the UM-Bridge workflow can be used to solve UQ problems through several examples that serve as a benchmark collection. We contributed to the paper by providing the CUQIpy-UMBridge plugin and developing three benchmark examples that demonstrate the use of CUQIpy within the UM-Bridge framework. These examples are a [CT reconstruction problem](https://github.com/UM-Bridge/benchmarks/tree/main/benchmarks/cuqi-ct), a [deconvolution problem](https://github.com/UM-Bridge/benchmarks/tree/main/benchmarks/deconvolution-1d), and a [heat equation problem](https://github.com/UM-Bridge/benchmarks/tree/main/benchmarks/heat-1d). They demonstrate how to easily set up versatile, UM-Bridge-compatible benchmarks with CUQIpy.
+As part of the UM-Bridge project, {cite}`seelinger2025democratizing` presented UM-Bridge as a tool for "democratizing uncertainty quantification". The paper presents the UM-Bridge framework and its capabilities, provides a list of UQ software tools that are compatible with UM-Bridge, including CUQIpy, and demonstrates how the UM-Bridge workflow can be used to solve UQ problems through several examples that serve as a benchmark collection. We contributed to the paper by providing the CUQIpy-UMBridge plugin and developing three benchmark examples that demonstrate the use of CUQIpy within the UM-Bridge framework. These examples are a [CT reconstruction problem](https://github.com/UM-Bridge/benchmarks/tree/main/benchmarks/cuqi-ct), a [deconvolution problem](https://github.com/UM-Bridge/benchmarks/tree/main/benchmarks/deconvolution-1d), and a [heat equation problem](https://github.com/UM-Bridge/benchmarks/tree/main/benchmarks/heat-1d). They demonstrate how to easily set up versatile, UM-Bridge-compatible benchmarks with CUQIpy.
 
 
 The link to the paper benchmarks is provided in the resources section below.
