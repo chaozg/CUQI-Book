@@ -1,6 +1,6 @@
 #  CUQIpy benchmarks
 
-Standard benchmarks serve as a valuable tool for comparing and understanding the performance of different UQ methods and implementations in solving Bayesian inverse problems.  With CUQIpy, we provide a library of benchmarks for researchers and students to test MCMC and optimization methods. This library, contributed by CUQI project graduate interns Tania Andreea Goia and Naoki Sakai, contains a collection of benchmark problems, including linear and nonlinear inverse problems, with varying prior and likelihood choices. Some of these benchmarks are essentially density functions that do not necessarily stem from an inverse problem, but are still useful for testing sampling methods. Examples include the [donut](https://github.com/CUQI-DTU/CUQIpy-Benchmarks/blob/main/demos/D01-donut.ipynb), the [banana](https://github.com/CUQI-DTU/CUQIpy-Benchmarks/blob/main/demos/D02-banana.ipynb), and the [six-modal](https://github.com/CUQI-DTU/CUQIpy-Benchmarks/blob/main/demos/D03-sixmodal.ipynb) density functions. The library also includes actual inverse problems, such as a [2D simple linear inverse problem](https://github.com/CUQI-DTU/CUQIpy-Benchmarks/blob/main/demos/D04-simplest-bip.ipynb), a [heat equation-based problem](https://github.com/CUQI-DTU/CUQIpy-Benchmarks/blob/main/demos/D05-heatstep.ipynb), and a [Poisson equation-based problem](https://github.com/CUQI-DTU/CUQIpy-Benchmarks/blob/main/demos/D06-poisson.ipynb). 
+Standard benchmarks serve as a valuable tool for comparing and understanding the performance of different UQ methods and implementations in solving Bayesian inverse problems.  We provide a benchmark library, [`CUQIpy-Benchmarks`](https://github.com/CUQI-DTU/CUQIpy-Benchmarks), for researchers and students to test MCMC and optimization methods. This library, contributed by CUQI project graduate interns Tania Andreea Goia and Naoki Sakai, contains a collection of benchmark problems, including linear and nonlinear inverse problems, with varying prior and likelihood choices. Some of these benchmarks are essentially density functions that do not necessarily stem from an inverse problem, but are still useful for testing sampling methods. Examples include the [donut](https://github.com/CUQI-DTU/CUQIpy-Benchmarks/blob/main/demos/D01-donut.ipynb), the [banana](https://github.com/CUQI-DTU/CUQIpy-Benchmarks/blob/main/demos/D02-banana.ipynb), and the [six-modal](https://github.com/CUQI-DTU/CUQIpy-Benchmarks/blob/main/demos/D03-sixmodal.ipynb) density functions. The library also includes actual inverse problems, such as a [2D simple linear inverse problem](https://github.com/CUQI-DTU/CUQIpy-Benchmarks/blob/main/demos/D04-simplest-bip.ipynb), a [heat equation-based problem](https://github.com/CUQI-DTU/CUQIpy-Benchmarks/blob/main/demos/D05-heatstep.ipynb), and a [Poisson equation-based problem](https://github.com/CUQI-DTU/CUQIpy-Benchmarks/blob/main/demos/D06-poisson.ipynb). 
 
  The benchmarks are designed to be easy to use and extend, with utility methods that simplify applying different sampling methods with different settings, and visualizing and summarizing results.
 
@@ -9,7 +9,8 @@ Standard benchmarks serve as a valuable tool for comparing and understanding the
 
 We first set up the benchmark problem and run different sampling methods with the following code:
  ```python
-target_banana = BC.Banana()
+y = cuqi.distribution.Gaussian(mean=np.array([0, 0]), cov=1)
+target_banana = benchmarksClass.Banana()
 samples = utilities.MCMCComparison(
     target_banana,
     scale=[1.0, 1.0, 0.065, 0.5, 0.1],
@@ -21,7 +22,7 @@ samples = utilities.MCMCComparison(
     selected_criteria=["ESS", "AR", "LogPDF", "Gradient", "Rhat"],
     selected_methods=["MH", "CWMH", "ULA", "MALA", "NUTS"])
  ```
- Note that `y` is a CUQIpy distribution from which `MCMCComparison` samples an initial point for the MCMC methods. Then, we can create a comparison table of the MCMC methods' parameters and diagnostics with the following code:
+ Note that `y` is the distribution from which `MCMCComparison` samples an initial point for each MCMC chain. Then, we can create a comparison table of the MCMC methods' parameters and diagnostics with the following code:
  ```python
  samples.create_comparison()
  ```
