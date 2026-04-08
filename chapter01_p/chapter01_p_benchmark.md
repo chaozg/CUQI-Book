@@ -11,6 +11,8 @@ We first set up the benchmark problem and run different sampling methods with th
  ```python
 import utilities 
 import benchmarksClass
+import cuqi
+import numpy as np
 y = cuqi.distribution.Gaussian(mean=np.array([0, 0]), cov=1)
 target_banana = benchmarksClass.Banana()
 samples = utilities.MCMCComparison(
