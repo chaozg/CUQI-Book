@@ -20,7 +20,7 @@ For the STORM problem, Laplace priors are an appealing choice for their ability 
 </figcaption>
 </figure>
 
-The CUQIpy developer team highly encourages new submissions and a [detailed instruction](https://github.com/CUQI-DTU/CUQIpy-User-Showcase/tree/main?tab=readme-ov-file#contribution-guidelines) on how to contribute is available at GitHub repository.
+The CUQIpy developer team highly encourages new submissions and a [detailed instruction](https://github.com/CUQI-DTU/CUQIpy-User-Showcase/tree/main?tab=readme-ov-file#contribution-guidelines) on how to contribute is available at the User Showcase GitHub repository.
 
 ## Resources
 - User-Showcase GitHub repository: https://github.com/CUQI-DTU/CUQIpy-User-Showcase
