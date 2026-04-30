@@ -28,7 +28,7 @@ $$
 where $\bar{t}$ and $\bar{y}$ are the averages of $t_i$ and $y_i$, respectively. The figure below illustrates this for a case with $\alpha=0.7$, $\beta=0.35$, $m=11$ and $\sigma=0.2$, and the least squares estimates are $\alpha_{\hbox{\tiny LS}}=0.88$ and $\beta_{\hbox{\tiny LS}}=0.29$.
 
 <figure>
-<img src="figures/Example1new.png" alt="GP demos" width="600"/>
+<img src="figures/Example1new.png" alt="figure" width="600"/>
 <figcaption>
 </figcaption>
 </figure>
@@ -48,7 +48,7 @@ $$
 The 2D Gaussian distribution $\mathcal{N} (\mu,\Sigma)$ is illustrated in the figure below, where the red dot represents the least squares solution for this particular noise realization. Note that $\sigma^2$ appears as a factor in $\Sigma$; as $\sigma \rightarrow 0$ the Gaussian approaches a delta distribution.
 
 <figure>
-<img src="figures/Example1Gaussnew.png" alt="GP demos" width="600"/>
+<img src="figures/Example1Gaussnew.png" alt="figure" width="600"/>
 <figcaption>
 </figcaption>
 </figure>
@@ -72,7 +72,7 @@ $$
 We assume Gaussian noise with $\sigma = 0.1$, and we use the parameters $g=9.816$ and $C=0.1$.
 
 <figure>
-<img src="figures/FOdata.png" alt="GP demos" width="600"/>
+<img src="figures/FOdata.png" alt="figure" width="600"/>
 <figcaption>
 </figcaption>
 </figure>

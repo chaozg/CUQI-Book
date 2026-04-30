@@ -48,4 +48,30 @@ where $\bar{x}$ is the prior mean and $D$ is a suitably chosen matrix
 that is used to tailor the prior to our needs.
 For example, we can impose smoothness (or regularity) of $x$ by
 choosing $D$ as a discretization to a derivative operator; see [Bar \S 4.2] for details.
-The use of $D$ is covered in Chapter/Section {\color{magenta}NNN}.
+The use of $D$ is covered in Chapter/Section {\color{magenta}NNN}. **Make the notation here consistent with that chapter.**
+
+**Example 3: Linear regression with a Gaussian prior.** To illustrate the role of the prior,
+we return to the linear regression problem
+from Example 1 for which the two least squares estimates
+are quite correlated and having large uncertainties.
+We choose a Gaussian prior \eqref{eq:Gprior} with $\delta = 0.4$.
+Then the MAP estimate and the covariance matrix are
+$$
+    \alpha_{\hbox{\tiny MAP}} = 0.71 \ , \qquad
+    \beta_{\hbox{\tiny MAP}} = 0.36 \ , \qquad
+    \Sigma =
+    \begin{pmatrix}  0.035 & -0.016 \\ -0.016 &  0.010 \end{pmatrix} .
+$$
+The figure below shows the posterior with a less elongated ellipse than
+the Gaussian for the least squares problem.
+The red dot represents the MAP estimate.
+
+<figure>
+<img src="figures/Example1Regnew.png" alt="figure" width="600"/>
+<figcaption>
+</figcaption>
+</figure>
+
+Compared to the least squares results without using a prior, 1) we obtain better
+estimates, 2) we reduce the correlation between the estimates, and 3) we reduce the
+standard deviations of the estimates.

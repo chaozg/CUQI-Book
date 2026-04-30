@@ -6,7 +6,7 @@ On an abstract level, in a forward problem we use a mathematical model -- the **
 forward problem.
 
 <figure>
-<img src="figures/FI.png" alt="GP demos" width="600"/>
+<img src="figures/FI.png" alt="figure" width="600"/>
 <figcaption>
 </figcaption>
 </figure>
