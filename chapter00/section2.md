@@ -2,7 +2,7 @@
 
 In the previous parameter-estimation examples we used data to estimate unknown parameters, in order to illustrate important concepts. These are simple examples of inverse problems. CUQIpy is, in fact, written to perform uncertainty quantification for inverse problems, so we should carefully define such problems.
 
-On an abstract level, in a forward problem we use a mathematical model -- the **forward model** -- to compute the output from a system given the input. This is illustrated by the right-pointing arrows in the figure below. In an **inverse problem** we estimate a quantity that is not directly observable, using the measured output from the system and the model of the forward problem. That is:\ we use indirect measurements -- the output -- to determine the input that we cannot directly observe, and which give rise to the data we measure. This is illustrated by the green arrows in the figure below. We cannot solve an inverse problem without a specification of the
+On an abstract level, in a forward problem we use a mathematical model - the **forward model** - to compute the output from a system given the input. This is illustrated by the right-pointing arrows in the figure below. In an **inverse problem** we estimate a quantity that is not directly observable, using the measured output from the system and the model of the forward problem. That is: we use indirect measurements - the output - to determine the input that we cannot directly observe, and which give rise to the data we measure. This is illustrated by the green arrows in the figure below. We cannot solve an inverse problem without a specification of the
 forward problem.
 
 <figure>
@@ -11,7 +11,7 @@ forward problem.
 </figcaption>
 </figure>
 
-CUQIpy includes a number of examples of inverse problems that can be used for illustrations and tests, and a few examples of these will help to illustrate the above concepts. The first three are examples of linear inverse problems where there is a linear relation between the quantity to be estimated and the measured data. In the fourth example this relationship is nonlinear, and it illustrates that uncertainty quantification -- and the CUQIpy software -- can also handle such problems.
+CUQIpy includes a number of examples of inverse problems that can be used for illustrations and tests, and a few examples of these will help to illustrate the above concepts. The first three are examples of linear inverse problems where there is a linear relation between the quantity to be estimated and the measured data. In the fourth example this relationship is nonlinear, and it illustrates that uncertainty quantification - and the CUQIpy software - can also handle such problems.
 
 **X-Ray Computed Tomography (CT).** Here we compute images of the interior of an object (or a person) without direct access to the interior. We send X-rays through the object from many directions and on a detector on the opposite side we record the attenuation of the X-rays. Moreover, we have a mathematical formulation of the forward model, consisting of the physics of X-ray attenuation and a specification of the measurement geometry. By solving the inverse problem we obtain information about the interior that helps engineers inspect an object and medical doctors diagnose a patient. X-ray CT problems are illustrated in Chapter {\color{magenta}XX}.
 

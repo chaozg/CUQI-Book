@@ -2,7 +2,7 @@
 
 Measured data inevitably contain errors, and we must understand how such errors influence the results that we compute. In other words, we want to understand the uncertainties in our results caused by the errors in the data. The CUQIpy package provides computational methods that allow us to do that, and this chapters provides the conceptual background for formulating and performing this uncertainty quantification.
 
-**Errors** in measured data are unavoidable. They have many causes, such as imperfections in the measurement device and spurious signals that we cannot avoid recording. In this work we consider the errors to be random (as opposed to deterministic or systematic errors), and we often know -- or can estimate -- their size and their statistical distribution.
+**Errors** in measured data are unavoidable. They have many causes, such as imperfections in the measurement device and spurious signals that we cannot avoid recording. In this work we consider the errors to be random (as opposed to deterministic or systematic errors), and we often know - or can estimate - their size and their statistical distribution.
 
 **Uncertainty** is, by definition, ``a lack of sureness about something.'' In our context it refers to the fact that random data errors inevitably lead to an error in the computed solution, and hence this solution has some degree of uncertainty. It is desirable to characterize this uncertainty; for example, we want to know the size and properties of the uncertainty.
 
@@ -58,7 +58,7 @@ This constitutes the quantification of the uncertainties in the least squares es
 ## Example 2: A falling object.
 
 This example is inspired by a carefully explained case study in [Estimating]. From measurements of an object in a free fall in air (which causes a
-drag on the object), we want to determine the gravitational acceleration $g$ and the coefficient of air resistance (or drag) $C$. The dynamics are described by a pair of ordinary differential equations -- see [Estimating] for details -- and there is an analytical expression for the distance $z$ the object has fallen, as a function of time $t$, from a resting position at time $t=0$:
+drag on the object), we want to determine the gravitational acceleration $g$ and the coefficient of air resistance (or drag) $C$. The dynamics are described by a pair of ordinary differential equations - see [Estimating] for details - and there is an analytical expression for the distance $z$ the object has fallen, as a function of time $t$, from a resting position at time $t=0$:
 $$
     z(t) = C^{-1} \log \cosh \left( \sqrt{g\, C} \, t \right) \ .
 $$

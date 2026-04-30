@@ -12,7 +12,7 @@ Hence, there is a need for a different way to access the posterior.
 
 A distribution function provides a mathematical description
 of the behavior of a random variable.
-If we produce many outcomes -- or samples -- of the random variable $x$
+If we produce many outcomes - or samples - of the random variable $x$
 following the posterior distribution $\pi(x|b_{\mathrm{obs}})$, then
 these samples help us estimate
 where most samples are concentrated and how they are spread out,
@@ -54,7 +54,7 @@ there is no simple analytical expression for the posterior.
 We use the test problem from Example 2 with the same Gaussian noise and the same
 parameters, and with two different priors.
 We compute 50,000 samples of the posterior using the
-Metropolis-Hasting sampling method -- see Chapter XXX
+Metropolis-Hasting sampling method - see Chapter XXX
 for a discussion of this sampling method.
 
 The first prior was suggested in [Estimating], and we assume that $g$ and $C$
@@ -113,8 +113,8 @@ $g_{\hbox{\tiny MAP}} = 9.906$ and $C_{\hbox{\tiny MAP}} = 0.111$.
 
 These two priors, that allow a wide range of values of the estimates,
 give rise to posteriors that are primarily determined by the likelihood.
-Therefore, the mean of the prior -- whose values are far from the
-parameters used in the data simulation -- plays only a minor role and
+Therefore, the mean of the prior - whose values are far from the
+parameters used in the data simulation - plays only a minor role and
 hence both priors give results that are quite similar with good estimates.
 
 We finish with an example that clearly illustrates the role played
@@ -152,7 +152,7 @@ The samples and the posterior are shown in the figures below.
 </figure>
 
 The MAP estimates are $g_{\hbox{\tiny MAP}} = 10.788$ and $C_{\hbox{\tiny MAP}} = 0.197$.
-This posterior is more concentrated due to the strong prior -- but
+This posterior is more concentrated due to the strong prior - but
 due to the bad choice of the mean the estimates are far from the
 actual values.
 
