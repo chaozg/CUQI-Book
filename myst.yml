@@ -22,6 +22,9 @@ project:
         - file: chapter00/chapter00.md #ch1
           children:
             - file: chapter00/section1.md
+            - file: chapter00/section2.md
+            - file: chapter00/section3.md
+            - file: chapter00/section4.md
         - file: chapter01/chapter01.md #ch1
           children:
             - file: chapter01/overview_of_cuqipy.md
