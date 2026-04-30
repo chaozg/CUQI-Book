@@ -122,7 +122,7 @@ by the prior.
 If we believe that our chosen mean $\mu$ reflects the true values
 of the parameters $g$ and $C$, then we should choose a covariance
 matrix $\Sigma$ with small variance.
-This gives a ``strong prior''
+This gives a "strong prior"
 that puts a lot of emphasis on the mean because the posterior is
 now dominated by the prior.
 This is all good if the mean if well chosen - but it can also be
