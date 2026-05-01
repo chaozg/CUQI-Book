@@ -1,6 +1,5 @@
 # Computational UQ: the Need for Sampling
 
-
 In some Bayesian inverse problems, the posterior distribution for $x$
 is known in closed analytical form.
 However, it may not always be practical to work with: 
