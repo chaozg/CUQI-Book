@@ -12,9 +12,7 @@ There are potentially other types of errors than those coming from the measured 
 
 It is instructive to illustrate the uncertainty due to data errors with two simple examples of parameter estimation. The first problem in linear, and we have an explicit formula for the solution's covariance matrix which helps illustrate basic aspects of uncertainty quantification. The second problem is nonlinear and thus well suited for illustrating how computational uncertainty quantification can be performed in practise when no analytical expressions are available.
 
-## Example 1: Linear regression.
-
-We are given a linear function
+**Example 1: Linear regression.** We are given a linear function
 $$f(t) = \alpha\, t + \beta \ ,$$
 where the two parameters $\alpha$ and $\beta$ are unknown. We assume that the noisy data $(t_i,y_i)$, $i=1,2,\ldots,m$ are given by
 $$    y_i = f(t_i) + e_i = \alpha\, t_i + \beta + e_i \qquad
@@ -55,9 +53,7 @@ The 2D Gaussian distribution $\mathcal{N} (\mu,\Sigma)$ is illustrated in the fi
 
 This constitutes the quantification of the uncertainties in the least squares estimates. The nonzero off-diagonal elements of $\Sigma$ show that there is quite some correlation between the two estimates, revealing itself by the tilt of the ellipsoid in the figure. The standard deviations for $\alpha_{\hbox{\tiny LS}}=0.88$ and $\beta_{\hbox{\tiny LS}}=0.29$ (the square roots of the diagonal elements of $\Sigma$) are 0.22 and 0.11, respectively. These numbers confirm that both parameters are approximated with some uncertainty.
 
-## Example 2: A falling object.
-
-This example is inspired by a carefully explained case study in [Estimating]. From measurements of an object in a free fall in air (which causes a
+**Example 2: A falling object.** This example is inspired by a carefully explained case study in [Estimating]. From measurements of an object in a free fall in air (which causes a
 drag on the object), we want to determine the gravitational acceleration $g$ and the coefficient of air resistance (or drag) $C$. The dynamics are described by a pair of ordinary differential equations - see [Estimating] for details - and there is an analytical expression for the distance $z$ the object has fallen, as a function of time $t$, from a resting position at time $t=0$:
 $$
     z(t) = C^{-1} \log \cosh \left( \sqrt{g\, C} \, t \right) \ .
