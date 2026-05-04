@@ -1,4 +1,4 @@
-# 1.4 Gaussians priors
+# 4. Gaussians priors
 
 For pedagogical reasons it instructive to consider the special case
 where both the likelihood and the prior are Gaussian.
