@@ -1,4 +1,4 @@
-# Gaussians priors
+# 1.4 Gaussians priors
 
 For pedagogical reasons it instructive to consider the special case
 where both the likelihood and the prior are Gaussian.
@@ -37,7 +37,7 @@ argument of the exponential function.
 This optimization problem is identical to the Tikhonov problem in \eqref{eq:Tikhonov}
 if we set $\lambda = \sigma/\delta$ (see, e.g., [Bar, \S 4.1]).
 Here we immediately recognize an advantage of the Bayesian formulation
-because it provides an explicit expression for the parameter~$\lambda$.
+because it provides an explicit expression for the parameter $\lambda$.
 
 It is often necessary to extend the simple Gaussian prior in \eqref{eq:Gprior}
 to a prior of the form

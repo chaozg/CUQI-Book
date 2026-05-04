@@ -1,5 +1,5 @@
 (section:computational-uq)=
-# Computational UQ: the need for sampling
+# 1.5 Computational UQ: the need for sampling
 
 In some Bayesian inverse problems, the posterior distribution for $x$
 is known in closed analytical form.

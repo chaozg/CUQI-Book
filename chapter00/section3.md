@@ -1,4 +1,4 @@
-# Prior information and Bayesian inverse problems
+# 1.3 Prior information and Bayesian inverse problems
 
 How do we supply prior information about a solution to an inverse problem,
 in order to make it well defined and stable with respect to data errors?
@@ -35,11 +35,11 @@ The flexibility of regularization methods lies in the fact that
 we can often find regularization terms (such as $\| x \|_2^2$)
 that correspond to our prior information.
 
-A different approach to solving inverse problem - which is the one that underlies uncertainty quantification and CUQIpy - is to formulate the inverse problem in a statistical framework in the form of a **Bayesian inverse problem**. Here, both the data $b$ and the solution $x$ are considered to be a random variables. Unlike traditional regularization methods that seek a single solution, the Bayesian approach treats the inverse problem as a statistical question, producing a full probability distribution for the solution~$x$. This is called the posterior distribution and it accounts for observational noise, uses prior information about the solution, and provides a complete quantification of uncertainty in the solution. See, e.g., [CS] for details.
+A different approach to solving inverse problem - which is the one that underlies uncertainty quantification and CUQIpy - is to formulate the inverse problem in a statistical framework in the form of a **Bayesian inverse problem**. Here, both the data $b$ and the solution $x$ are considered to be a random variables. Unlike traditional regularization methods that seek a single solution, the Bayesian approach treats the inverse problem as a statistical question, producing a full probability distribution for the solution $x$. This is called the posterior distribution and it accounts for observational noise, uses prior information about the solution, and provides a complete quantification of uncertainty in the solution. See, e.g., [CS] for details.
 
 To understand Bayesian inverse problems and the way they are formulated and used in CUQIpy, we need to introduce four important statistical tools such that they are readily available in the rest of the book. See, e.g., [CS, Chapter1] for more details. For simplicity we consider the linear forward model $b = A\, x$ where $A$ is a matrix, $b$ is the measured data, and $x$ is the solution.
 
-**Data distribution** $\pi(b | x)$. This is a statistical distribution that specifies how likely it is to observe the data $b$ given the parameter or parameter-vector $x$. A key point is that we assume the noisy data can be explained by a forward model (here $b = A\, x$), and therefore the data distribution is conditioned in the variable~$x$. The second key point is that we assume a statistical description of the noise, and this assumption informs the specific expression for $\pi(b | x)$.
+**Data distribution** $\pi(b | x)$. This is a statistical distribution that specifies how likely it is to observe the data $b$ given the parameter or parameter-vector $x$. A key point is that we assume the noisy data can be explained by a forward model (here $b = A\, x$), and therefore the data distribution is conditioned in the variable $x$. The second key point is that we assume a statistical description of the noise, and this assumption informs the specific expression for $\pi(b | x)$.
 
 **Likelihood function** $L(x | b=b_{\mathrm{obs}})$. We obtain the likelihood function from the data distribution
 by fixing the variable $b$ to be the observed data $b_{\mathrm{obs}}$. Hence, the likelihood function quantifies the probability of observing the noisy data $b_\text{obs}$ for each possible value of $x$, according to the predictions made by the forward model. As an example, for our linear forward model and with iid Gaussian noise we have
@@ -59,7 +59,7 @@ Given these important tools, **Bayes' theorem** from statistics (see, e.g., [CS,
 $$
     \pi(x|b_{\mathrm{obs}}) = \frac{L(x | b=b_{\mathrm{obs}}) \, \pi(x)}{\pi(b)} \ .
 $$
-Here, the denominator (called the marginal probability or marginal distribution) is a constant with respect to $x$; it can always be determined such that the fraction integrates to~1. Throughout, we will therefore write
+Here, the denominator (called the marginal probability or marginal distribution) is a constant with respect to $x$; it can always be determined such that the fraction integrates to 1. Throughout, we will therefore write
 $$
     \pi(x|b_{\mathrm{obs}}) \propto L(x | b=b_{\mathrm{obs}}) \, \pi(x) \ .
 $$
