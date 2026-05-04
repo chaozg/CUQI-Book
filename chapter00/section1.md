@@ -31,13 +31,7 @@ where $\bar{t}$ and $\bar{y}$ are the averages of $t_i$ and $y_i$, respectively.
 </figcaption>
 </figure>
 
-A statistical approach gives insight about the influence of the noise on the estimated parameters. This least squares estimation problem is linear, it follows that the two estimates follow a bivariate Gaussian distribution $\mathcal{N} (\mu,\Sigma)$
-%  \begin{equation} \label{eq:xLS}
-%    \begin{pmatrix} \alpha_{\hbox{\tiny LS}} \\ \beta_{\hbox{\tiny LS}} \end{pmatrix}
-%    \sim \mathcal{N} (\mu,\Sigma) \ , \qquad
-%    \mu = \begin{pmatrix} \alpha \\ \beta \end{pmatrix}
-%  \end{equation}
-whose mean $\mu = (\alpha,\beta)$ is the vector of the exact parameters. Moreover, the $2 \times 2$ covariance matrix is given by
+A statistical approach gives insight about the influence of the noise on the estimated parameters. This least squares estimation problem is linear, it follows that the two estimates follow a bivariate Gaussian distribution $\mathcal{N} (\mu,\Sigma)$, whose mean $\mu = (\alpha,\beta)$ is the vector of the exact parameters. Moreover, the $2 \times 2$ covariance matrix is given by
 $$
     \Sigma = \sigma^2 %\bigl(A^TA\bigr)^{-1} =
     \begin{pmatrix} \sum t_i^2 & \sum t_i \\[2mm] \sum t_i & m \end{pmatrix}^{\!-1} =
