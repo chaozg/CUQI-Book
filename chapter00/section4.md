@@ -9,7 +9,7 @@ $$
     \pi(x) \propto \exp\left( - \frac{\| x \|_2^2}{2\delta^2} \right) \ .
 $$
 This prior expresses that we prefer solutions $x$ whose elements
-are not ``large'' according to the parameter $\delta$ that controls
+are not "large" according to the parameter $\delta$ that controls
 the concentration of the prior around the mean (which is zero here).
 The smaller $\delta$ is, the tighter the distribution is around the mean,
 meaning the prior favors values of $x$ close to zero;

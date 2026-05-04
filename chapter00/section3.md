@@ -67,4 +67,4 @@ The important lesson here is that in order to quantify the uncertainties in $x$ 
 the prior for the solution. A key point here is that the prior, when properly chosen, helps take care of the violation
 of the Hadamard conditions in an ill-posed problem. In the following chapters we have much more to say about all this.
 
-In Bayesian inverse problems and uncertainty quantification the goal is thus to determined the posterior distribution for $x$. We need to know its ``shape'' and characteristics because it tells us everything we want to know about the random variable~$x$. For example, we can produce point estimates of $x$, and we can compute variances, covariances, and higher-order moments.
+In Bayesian inverse problems and uncertainty quantification the goal is thus to determined the posterior distribution for $x$. We need to know its "shape" and characteristics because it tells us everything we want to know about the random variable $x$. For example, we can produce point estimates of $x$, and we can compute variances, covariances, and higher-order moments.
