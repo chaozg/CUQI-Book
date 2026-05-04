@@ -1,4 +1,4 @@
-# Inverse Problems and Ill-Posed Problems
+# Inverse problems and ill-posed problems
 
 In the previous parameter-estimation examples we used data to estimate unknown parameters, in order to illustrate important concepts. These are simple examples of inverse problems. CUQIpy is, in fact, written to perform uncertainty quantification for inverse problems, so we should carefully define such problems.
 
@@ -6,7 +6,7 @@ On an abstract level, in a forward problem we use a mathematical model - the **f
 forward problem.
 
 <figure>
-<img src="figures/FI.png" alt="figure" width="600"/>
+<img src="figures/FI.png" alt="figure" width="400"/>
 <figcaption>
 </figcaption>
 </figure>

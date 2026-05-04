@@ -1,4 +1,4 @@
-# Gaussians Priors
+# Gaussians priors
 
 For pedagogical reasons it instructive to consider the special case
 where both the likelihood and the prior are Gaussian.
@@ -48,7 +48,7 @@ where $\bar{x}$ is the prior mean and $D$ is a suitably chosen matrix
 that is used to tailor the prior to our needs.
 For example, we can impose smoothness (or regularity) of $x$ by
 choosing $D$ as a discretization to a derivative operator; see [Bar \S 4.2] for details.
-The use of $D$ is covered in Chapter/Section {\color{magenta}NNN}. **Make the notation here consistent with that chapter.**
+The use of $D$ is covered in Chapter/Section {\color{magenta}NNN}.
 
 **Example 3: Linear regression with a Gaussian prior.** To illustrate the role of the prior,
 we return to the linear regression problem
@@ -67,7 +67,7 @@ the Gaussian for the least squares problem.
 The red dot represents the MAP estimate.
 
 <figure>
-<img src="figures/Example1Regnew.png" alt="figure" width="600"/>
+<img src="figures/Example1Regnew.png" alt="figure" width="400"/>
 <figcaption>
 </figcaption>
 </figure>
@@ -75,3 +75,7 @@ The red dot represents the MAP estimate.
 Compared to the least squares results without using a prior, 1) we obtain better
 estimates, 2) we reduce the correlation between the estimates, and 3) we reduce the
 standard deviations of the estimates.
+
+The above example illustrates how casting the estimation problem in the
+Bayesian framework gives us more control of the solution than if we use
+classical least squares estimation.

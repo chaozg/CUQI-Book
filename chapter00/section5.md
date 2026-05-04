@@ -1,4 +1,5 @@
-# Computational UQ: the Need for Sampling
+(section:computational-uq)=
+# Computational UQ: the need for sampling
 
 In some Bayesian inverse problems, the posterior distribution for $x$
 is known in closed analytical form.
@@ -43,7 +44,7 @@ Indeed, we see that the density of samples is higher near the
 least squares estimate and, overall, follows the Gaussian shape.
 
 <figure>
-<img src="figures/Example4new.png" alt="figure" width="600"/>
+<img src="figures/Example4new.png" alt="figure" width="400"/>
 <figcaption>
 </figcaption>
 </figure>
@@ -57,7 +58,7 @@ Metropolis-Hasting sampling method - see Chapter XXX
 for a discussion of this sampling method.
 
 The first prior was suggested in [Estimating], and we assume that $g$ and $C$
-are \emph{uniformly distributed}
+are *uniformly distributed*
 in the intervals $[8,12]$ and $[0.01,0.25]$, respectively.
 The main role of this prior is to ensure positive estimates, which are
 allowed to take values in wide intervals.
@@ -68,19 +69,19 @@ Clearly, the estimates for $g$ and $C$ are correlated as evidenced by
 the tilt of the posterior.
 
 <figure>
-<img src="figures/samples_uniform.png" alt="figure" width="600"/>
+<img src="figures/samples_uniform.png" alt="figure" width="400"/>
 <figcaption>
 </figcaption>
 </figure>
 
 <figure>
-<img src="figures/density_uniform.png" alt="figure" width="600"/>
+<img src="figures/density_uniform.png" alt="figure" width="400"/>
 <figcaption>
 </figcaption>
 </figure>
 
 The second prior in this example takes the form of a
-\emph{truncated Gaussian} distribution for $g$ and $C$ given by
+*truncated Gaussian* distribution for $g$ and $C$ given by
 $\mathcal{N}_{\hbox{\tiny trunc}}(\mu,\Sigma,\ell,u)$
 with mean, covariance matrix, and lower and upper bounds
 $$
@@ -99,13 +100,13 @@ the red "plus" indicates the MAP estimates
 $g_{\hbox{\tiny MAP}} = 9.906$ and $C_{\hbox{\tiny MAP}} = 0.111$.
 
 <figure>
-<img src="figures/samples_truncated_normal_larger_variance.png" alt="figure" width="600"/>
+<img src="figures/samples_truncated_normal_larger_variance.png" alt="figure" width="400"/>
 <figcaption>
 </figcaption>
 </figure>
 
 <figure>
-<img src="figures/density_truncated_normal_larger_variance.png" alt="figure" width="600"/>
+<img src="figures/density_truncated_normal_larger_variance.png" alt="figure" width="400"/>
 <figcaption>
 </figcaption>
 </figure>
@@ -139,13 +140,13 @@ which expresses a strong belief in the mean.
 The samples and the posterior are shown in the figures below.
 
 <figure>
-<img src="figures/samples_truncated_normal.png" alt="figure" width="600"/>
+<img src="figures/samples_truncated_normal.png" alt="figure" width="400"/>
 <figcaption>
 </figcaption>
 </figure>
 
 <figure>
-<img src="figures/density_truncated_normal.png" alt="figure" width="600"/>
+<img src="figures/density_truncated_normal.png" alt="figure" width="400"/>
 <figcaption>
 </figcaption>
 </figure>

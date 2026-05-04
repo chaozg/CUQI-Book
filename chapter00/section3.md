@@ -1,4 +1,4 @@
-# Prior Information and Bayesian Inverse Problems
+# Prior information and Bayesian inverse problems
 
 How do we supply prior information about a solution to an inverse problem,
 in order to make it well defined and stable with respect to data errors?

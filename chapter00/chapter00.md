@@ -1,4 +1,4 @@
-# Introduction to Uncertainty, Priors, and Bayesian Inverse Problems
+# Chapter 1: Introduction to uncertainty, priors, and Bayesian inverse problems
 
 The goal of this introductory chapter is to set the stage for the book. We give brief introductions to the main concepts and tools that we are going to use throughout. There is nothing new here; a reader who is already familiar with Bayesian inverse problems and uncertainty quantification, and is mainly interested in the use of CUQIpy, can easily skip this chapter.
 

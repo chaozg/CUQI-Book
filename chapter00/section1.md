@@ -1,4 +1,4 @@
-# Errors and Uncertainties and Why They Matter
+# Errors and uncertainties and why they matter
 
 Measured data inevitably contain errors, and we must understand how such errors influence the results that we compute. In other words, we want to understand the uncertainties in our results caused by the errors in the data. The CUQIpy package provides computational methods that allow us to do that, and this chapters provides the conceptual background for formulating and performing this uncertainty quantification.
 
@@ -26,7 +26,7 @@ $$
 where $\bar{t}$ and $\bar{y}$ are the averages of $t_i$ and $y_i$, respectively. The figure below illustrates this for a case with $\alpha=0.7$, $\beta=0.35$, $m=11$ and $\sigma=0.2$, and the least squares estimates are $\alpha_{\hbox{\tiny LS}}=0.88$ and $\beta_{\hbox{\tiny LS}}=0.29$.
 
 <figure>
-<img src="figures/Example1new.png" alt="figure" width="600"/>
+<img src="figures/Example1new.png" alt="figure" width="400"/>
 <figcaption>
 </figcaption>
 </figure>
@@ -40,7 +40,7 @@ $$
 The 2D Gaussian distribution $\mathcal{N} (\mu,\Sigma)$ is illustrated in the figure below, where the red dot represents the least squares solution for this particular noise realization. Note that $\sigma^2$ appears as a factor in $\Sigma$; as $\sigma \rightarrow 0$ the Gaussian approaches a delta distribution.
 
 <figure>
-<img src="figures/Example1Gaussnew.png" alt="figure" width="600"/>
+<img src="figures/Example1Gaussnew.png" alt="figure" width="400"/>
 <figcaption>
 </figcaption>
 </figure>
@@ -62,9 +62,9 @@ $$
 We assume Gaussian noise with $\sigma = 0.1$, and we use the parameters $g=9.816$ and $C=0.1$.
 
 <figure>
-<img src="figures/FOdata.png" alt="figure" width="600"/>
+<img src="figures/FOdata.png" alt="figure" width="400"/>
 <figcaption>
 </figcaption>
 </figure>
 
-The two parameters $g$ and $C$ appear nonlinearly in this problem, and hence we use a nonlinear least squares solver to compute the estimates $g_{\hbox{\tiny LS}} = 9.886$ and $C_{\hbox{\tiny LS}} = 0.104$. Assessing the uncertainties in this nonlinear problem cannot be done via a covariance matrix (as in the first example), and in \S\ref{sec:CUQI} we demonstrate how this is done by computational uncertainty quantification and CUQIpy.
+The two parameters $g$ and $C$ appear nonlinearly in this problem, and hence we use a nonlinear least squares solver to compute the estimates $g_{\hbox{\tiny LS}} = 9.886$ and $C_{\hbox{\tiny LS}} = 0.104$. Assessing the uncertainties in this nonlinear problem cannot be done via a covariance matrix (as in the first example), and in {ref}`section:computational-uq` we demonstrate how this is done by computational uncertainty quantification and CUQIpy.
