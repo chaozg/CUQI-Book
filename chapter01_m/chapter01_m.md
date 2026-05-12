@@ -1,8 +1,12 @@
-# ⚠️ Chapter 11: BIPs with implicit prior
+# Chapter 11: BIPs with implicit prior
+
+(implicit-prior-chapter)=
 
 > ⚠️ **Contents to be added:** Add intro to the chapter. 
 
 > ⚠️ **This is just a chapter concept.. not finalized yet** 
+
+Recall from {ref}`implicit-prior-section`
 
 - short recap of what are implicit priors, and thier categoraization, refer to previous section on implicit priors.
 
