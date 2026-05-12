@@ -2,17 +2,11 @@
 
 (implicit-prior-chapter)=
 
-> ⚠️ **Contents to be added:** Add intro to the chapter. 
+In this chapter, we discuss how to solve Bayesian inverse problems using implicit priors in CUQIpy. Recall from {ref}`implicit-paper-summary` that we call priors implicit if the prior probability density $p(\mathbf{x})$ is either intractable or nonexistent.
 
-> ⚠️ **This is just a chapter concept.. not finalized yet** 
+We have already seen the example of constraints through generative models in `PDE-based-heat-problem`. In this chapter, we focus on two other implicit priors. First, in `regularized-linear-rto`, we show how to construct implicit priors that combine variational regularization with Gaussian priors. Second, in {ref}`MYULA`, we show how to define priors using denoising algorithms.
 
-Recall from {ref}`implicit-prior-section`
-
-- short recap of what are implicit priors, and thier categoraization, refer to previous section on implicit priors.
-
-- What we present in this chapter:
-  - A relatively simple BIP examples that use the second and third type of implicit priors (an examples of the first type can be found in {ref}`PDE-based-heat-problem`)
-  - In both examples, we infer a square signal, shown below, which represents different quantities depending on the example. The signal is chosen for simplicity, but also because it illustrates the ability of implicit priors to capture features in the inferred signal, such as sharp edges and positivity.
+In both example, we consider the relatively simple inverse problems of inferring a square signal, shown below, from measuring the convolution of the signal. This signal is chosen for simplicity, but also because it illustrates the ability of implicit priors to capture features in the inferred signal, such as sharp edges and positivity.
 
 ```{figure} figures/square_signal.jpg
 :label: FigureSquare
@@ -21,8 +15,5 @@ Recall from {ref}`implicit-prior-section`
 :align: center
 The square signal, which is used as the true signal in the examples in this chapter. The signal represents different quantities depending on the example, e.g., a conductivity field or an image.
 ```
-- can talk a bit about implict prior limitations
 
-Refer to {cite}`everink2025computational` for additional theoretical background, details about the implicit prior framework in CUQIpy and additional examples, including combining implicit priors with hyperparameters, which we do not discuss in this chapter for brevity. 
-
-
+Additional information about implicit priors and their implementation in CUQIpy can be found in {cite}`everink2025computational`, including theory and practical considerations like hyperparameter tuning, which we do not discuss in this chapter for brevity. 
