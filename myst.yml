@@ -22,7 +22,6 @@ project:
     - file: intro.md
     - title: "Part I: Foundations of CUQIpy and Bayesian Inverse Problems"
       children:
-        - file: chapter01_0/chapter01_0.md #ch1
         - file: chapter01/chapter01.md #ch1
           children:
             - file: chapter01/overview_of_cuqipy.md
@@ -68,7 +67,7 @@ project:
         - file: chapter01_m/chapter01_m.md #ch10
           children:
             - file: chapter01_m/example_rto.ipynb
-            - file: chapter01_m/Poisson_1D_MYULA_v4.ipynb
+            - file: chapter01_m/CUQIpy-FEniCS-example/myula.ipynb
 
 
     - title: "Part III: Applications and Research Using CUQIpy"
