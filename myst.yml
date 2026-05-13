@@ -22,6 +22,13 @@ project:
     - file: intro.md
     - title: "Part I: Foundations of CUQIpy and Bayesian Inverse Problems"
       children:
+        - file: chapter00/chapter00.md #ch1
+          children:
+            - file: chapter00/section1.md
+            - file: chapter00/section2.md
+            - file: chapter00/section3.md
+            - file: chapter00/section4.md
+            - file: chapter00/section5.md
         - file: chapter01/chapter01.md #ch1
           children:
             - file: chapter01/overview_of_cuqipy.md
@@ -51,7 +58,6 @@ project:
           children:
             - file: chapter05/geometries_in_cuqipy.ipynb
 
-
     - title: "Part II: Inference and Sampling Methods"  
       children:
         - file: chapter01_g/chapter01_g.md #ch7
@@ -60,7 +66,7 @@ project:
         - file: chapter01_h/chapter01_h.md #ch8
           children:
             - file: chapter04/gibbs.ipynb
-            - file: chapter01_h/chapter01_h_contents.md
+            - file: chapter01_h/multiple_input.ipynb
         - file: chapter01_k/chapter01_k.md #ch9
           children:
             - file: chapter04/Plugins/CUQIpy-PyTorch/hmc.ipynb
@@ -92,7 +98,6 @@ project:
             - file: chapter01_q/chapter01_q_subseapipe.md
             - file: chapter01_q/chapter01_q_ca.md
             - file: chapter01_q/chapter01_q_gp.md
-
         - file: chapter08/chapter08.md #ch15
 site:
   options:
