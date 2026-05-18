@@ -39,10 +39,9 @@ A different approach to solving inverse problem - which is the one that underlie
 
 To understand Bayesian inverse problems and the way they are formulated and used in CUQIpy, we need to introduce four important statistical tools such that they are readily available in the rest of the book. See, e.g., [CS, Chapter1] for more details. For simplicity we consider the linear forward model $b = A\, x$ where $A$ is a matrix, $b$ is the measured data, and $x$ is the solution.
 
-**Data distribution** $\pi(b | x)$. This is a statistical distribution that specifies how likely it is to observe the data $b$ given the parameter or parameter-vector $x$. A key point is that we assume the noisy data can be explained by a forward model (here $b = A\, x$), and therefore the data distribution is conditioned in the variable $x$. The second key point is that we assume a statistical description of the noise, and this assumption informs the specific expression for $\pi(b | x)$.
+**Data distribution** $\pi(b | x)$. This is a distribution that specifies how likely it is to observe the data $b$ given the parameter or parameter-vector $x$. A key point is that we assume the noisy data can be explained by a forward model (here $b = A\, x$), and therefore the data distribution is conditioned in the variable $x$. The second key point is that we assume a statistical description of the noise, and this assumption informs the specific expression for $\pi(b | x)$.
 
-**Likelihood function** $L(x | b=b_{\mathrm{obs}})$. We obtain the likelihood function from the data distribution
-by fixing the variable $b$ to be the observed data $b_{\mathrm{obs}}$. Hence, the likelihood function quantifies the probability of observing the noisy data $b_\text{obs}$ for each possible value of $x$, according to the predictions made by the forward model. As an example, for our linear forward model and with iid Gaussian noise we have
+**Likelihood function** $L(x | b=b_{\mathrm{obs}})$. The likelihood function is the probability density of the data, viewed as a *function of the parameters*, according to the forward model. We obtain the likelihood function from the data distribution by fixing the variable $b$ to be the observed data $b_{\mathrm{obs}}$. As an example, for our linear forward model and with iid Gaussian noise we have
 $$
     L(x | b=b_{\mathrm{obs}}) \propto
     \exp\biggl( - \frac{\|A\, x-b_{\mathrm{obs}}\|_2^2}{2\,\sigma^2} \biggr)\ .
