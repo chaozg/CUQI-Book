@@ -50,9 +50,9 @@ $$
     L(x \mid b=b_{\mathrm{obs}}) \propto \exp\biggl( - \frac{\|A\, x-b_{\mathrm{obs}}\|_2^2}{2\,\sigma^2} \biggr)\ .
 $$
 
-**Prior $\pi(x).$** This is a distribution function that expresses our knowledge, or belief, about the solution $x$ to the inverse problem. In Bayesian inverse problems it is used to enforce that we prefer solutions that adhere to our prior knowledge, and it plays the same role as the regularization term in classical regularization methods. The prior may be determined from past information or previous experiments, or it can express a subjective assessment of a domain expert [Rob, Chapter 3].
+**Prior $\pi(x).$** This is a distribution that expresses our knowledge, or belief, about the solution $x$ to the inverse problem. In Bayesian inverse problems it is used to enforce that we prefer solutions that adhere to our prior knowledge, and it plays the same role as the regularization term in classical regularization methods. The prior may be determined from past information or previous experiments, or it can express a subjective assessment of a domain expert [Rob, Chapter 3].
 
-**Posterior $\pi(x | b_{\mathrm{obs}}).$** This  function expresses the probability of $x$ according to the measured data as well as our prior information. Hence, it is conditioned on $b_{\mathrm{obs}}$ and it expresses what is known about the solution after the data has been collected and the prior is imposed. The aim of a Bayesian inverse problem is to characterize and compute this probability function.
+**Posterior $\pi(x | b_{\mathrm{obs}}).$** This distribution expresses the probability of $x$ according to the measured data as well as our prior information. Hence, it is conditioned on $b_{\mathrm{obs}}$ and it expresses what is known about the solution after the data has been collected and the prior is imposed. The aim of a Bayesian inverse problem is to characterize and compute this probability.
 
 We note that some presentations of Bayesian inverse problems skip the introduction of the data distribution $\pi(b | x)$.
 We include it in CUQIpy and in this book, because we believe this makes it easier and more intuitive to formulate and understand how the forward model and the noise model enter the likelihood function.
@@ -69,4 +69,4 @@ The important lesson here is that in order to quantify the uncertainties in $x$ 
 the prior for the solution. A key point here is that the prior, when properly chosen, helps take care of the violation
 of the Hadamard conditions in an ill-posed problem. In the following chapters we have much more to say about all this.
 
-In Bayesian inverse problems and uncertainty quantification the goal is thus to determined the posterior distribution for $x$. We need to know its "shape" and characteristics because it tells us everything we want to know about the random variable $x$. For example, we can produce point estimates of $x$, and we can compute variances, covariances, and higher-order moments.
+In Bayesian inverse problems and uncertainty quantification the goal is thus to determine the posterior distribution for $x$. We need to know its "shape" and characteristics because it tells us everything we want to know about the random variable $x$. For example, we can produce point estimates of $x$, and we can compute variances, covariances, and higher-order moments.
