@@ -11,7 +11,7 @@ Omitting the normalization constant (which does not depend on $x$) yields the co
 $$
     \pi(x) \propto \exp\left( - \frac{\| x \|_2^2}{2\delta^2} \right) \ .
 $$
-This prior expresses that the elements of $x$ are independent and follow a Gaussian distribution with zero mean and standard deviation $\delta$ that controls the concentration of the prior around the mean (which is zero here). The smaller $\delta$ is, the tighter the distribution is around the mean,
+This prior expresses that the elements of $x$ are independent and follow a Gaussian distribution with zero mean and standard deviation $\delta$ that controls the concentration of the prior around the mean (which is zero here). The smaller $\delta$ is, the tighter the density is around the mean,
 meaning the prior favors values of $x$ close to zero;
 conversely, the larger $\delta$ is, the more spread out the prior is,
 suggesting that $x$ could take a wider range of values with higher probability.

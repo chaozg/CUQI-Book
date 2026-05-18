@@ -35,7 +35,7 @@ The flexibility of regularization methods lies in the fact that
 we can often find regularization terms (such as $\| x \|_2^2$)
 that correspond to our prior information.
 
-A different approach to solving inverse problem - which is the one that underlies uncertainty quantification and CUQIpy - is to formulate the inverse problem in a statistical framework in the form of a **Bayesian inverse problem**. Here, both the data $b$ and the solution $x$ are considered to be a random variables. Unlike traditional regularization methods that seek a single solution, the Bayesian approach treats the inverse problem as a statistical question, producing a full probability distribution for the solution $x$. This is called the posterior distribution and it accounts for observational noise, uses prior information about the solution, and provides a complete quantification of uncertainty in the solution. See, e.g., [CS] for details.
+A different approach to solving inverse problem - which is the one that underlies uncertainty quantification and CUQIpy - is to formulate the inverse problem in a statistical framework in the form of a **Bayesian inverse problem**. Here, both the data $b$ and the solution $x$ are considered to be a random variables. Unlike traditional regularization methods that seek a single solution, the Bayesian approach treats the inverse problem as a statistical question, producing a full probability distribution for the solution $x$. This is called the posterior and it accounts for observational noise, uses prior information about the solution, and provides a complete quantification of uncertainty in the solution. See, e.g., [CS] for details.
 
 To understand Bayesian inverse problems and the way they are formulated and used in CUQIpy, we need to introduce four important statistical tools such that they are readily available in the rest of the book. See, e.g., [CS, Chapter1] for more details. For simplicity we consider the linear forward model $b = A\, x$ where $A$ is a matrix, $b$ is the measured data, and $x$ is the solution.
 
@@ -61,7 +61,7 @@ Given these important tools, **Bayes' theorem** from statistics (see, e.g., [CS,
 $$
     \pi(x|b_{\mathrm{obs}}) = \frac{L(x | b=b_{\mathrm{obs}}) \, \pi(x)}{\pi(b)} \ .
 $$
-Here, the denominator (called the marginal probability or marginal distribution) is a constant with respect to $x$; it can always be determined such that the fraction integrates to 1. Throughout, we will therefore write
+Here, the denominator (called the marginal likelihood) is a constant with respect to $x$; it can always be determined such that the fraction integrates to 1. Throughout, we will therefore write
 $$
     \pi(x|b_{\mathrm{obs}}) \propto L(x | b=b_{\mathrm{obs}}) \, \pi(x) \ .
 $$
@@ -69,4 +69,4 @@ The important lesson here is that in order to quantify the uncertainties in $x$ 
 the prior for the solution. A key point here is that the prior, when properly chosen, helps take care of the violation
 of the Hadamard conditions in an ill-posed problem. In the following chapters we have much more to say about all this.
 
-In Bayesian inverse problems and uncertainty quantification the goal is thus to determine the posterior distribution for $x$. We need to know its "shape" and characteristics because it tells us everything we want to know about the random variable $x$. For example, we can produce point estimates of $x$, and we can compute variances, covariances, and higher-order moments.
+In Bayesian inverse problems and uncertainty quantification the goal is thus to determine the posterior for $x$. We need to know its "shape" and characteristics because it tells us everything we want to know about the random variable $x$. For example, we can produce point estimates of $x$, and we can compute variances, covariances, and higher-order moments.

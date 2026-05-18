@@ -1,19 +1,19 @@
 (section:computational-uq)=
 # 5. Computational UQ: the need for sampling
 
-In some Bayesian inverse problems, the posterior distribution for $x$
+In some Bayesian inverse problems, the posterior for $x$
 is known in closed analytical form.
 However, it may not always be practical to work with: 
 for high-dimensional distributions or when the forward model is computationally
 expensive, it is a computational challenge to compute posterior moments.
-Moreover, in most Bayesian inverse problems the posterior distribution
+Moreover, in most Bayesian inverse problems the posterior
 is not known in analytical form.
 Hence, there is a need for a different way to access the posterior.
 
-A distribution function provides a mathematical description
+A density function provides a mathematical description
 of the behavior of a random variable.
 If we produce many outcomes - or samples - of the random variable $x$
-following the posterior distribution $\pi(x|b_{\mathrm{obs}})$, then
+following the posterior $\pi(x|b_{\mathrm{obs}})$, then
 these samples help us estimate
 where most samples are concentrated and how they are spread out,
 corresponding to high and low density regions of the probability density function,
@@ -35,8 +35,7 @@ Below, we illustrate the concept of sampling with a few simple examples.
 
 **Example 4: Sampling the Gaussian likelihood in the linear regression problem.** We return to the problem from Example 3 with Gaussian noise and a Gaussian prior,
 giving a Gaussian posterior.
-It is instructive to present an example of sampling where we can compare
-the distribution of samples with the analytic posterior distribution function.
+It is instructive to present an example where we can compare samples of the posterior against its analytic density function.
 This is shown in the figure below,
 where the dots are the samples and the background are contour plots of
 the posterior.
