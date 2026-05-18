@@ -25,6 +25,6 @@ An example of the use of both linear randomize-then-optimize and its regularized
 #### Langevin-based implicit priors
 The unadjusted Langevin algorithm (ULA) is an example of a powerful sampling algorithm that uses the gradient of the log likelihood and the gradient of the prior log density $\nabla \log(p(\mathbf{x}))$. Further variants of Langevin-based algorithms have been developed that make use of other prior information, for example, Moreau-Yoshida ULA (MYULA) and Plug-and-Play ULA (PNP-ULA) both make use of denoisers instead of prior densities.
 
-An example of the use of MYULA in CUQIpy can be found in {ref}`(MYULA_section)=`.
+An example of the use of MYULA in CUQIpy can be found in {ref}`MYULA_section`.
 
 More information on implicit priors can be found in the dedicated chapter {ref}`implicit-prior-chapter` and the summary of the paper {cite}`everink2025computational` in {ref}`implicit-paper-summary`.
