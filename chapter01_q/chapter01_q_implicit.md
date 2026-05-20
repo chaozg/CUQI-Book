@@ -1,10 +1,11 @@
+(implicit-paper-summary)=
 # 3. A Computational Framework and Implementation of Implicit Priors in Bayesian Inverse Problems
 
 ## 3.1. Summary
 
 Bayesian modeling can be done using many families of prior distributions, each with their own behaviors. Most of the time, these priors are defined by explicitly writing down their probability density function (pdf), and we can call these explicit priors. In this work, {cite}`everink2025computational`, we study the opposite, priors for which the pdf cannot be written explicitly or is expensive or impossible to compute.
 
-Although some structure is lost by not having access to a pdf, we can still construct intricate priors that allow for efficient posterior samples. Examples of methods we have in CUQIpy, see [Chapter 10](..//chapter01_m/chapter01_m.md), include:
+Although some structure is lost by not having access to a pdf, we can still construct intricate priors that allow for efficient posterior samples. Examples of methods we have in CUQIpy, see {ref}`implicit-prior-chapter`, include:
 - Generative models allow for describing a parameter space concentrates on a complicated low-dimensional manifold using a simpler latent space.
 - Plug-and-Play (PnP) priors allow for turning deep-learning based denoising methods into prior distributions.
 - Regularized Gaussian Distributions allow for turning the deterministic effect of constraints and sparsity-promoting regularization into priors.
@@ -28,5 +29,4 @@ In all, the paper presents this computational framework and its impact on the im
 ## 3.2. Resources
 - Paper: {cite}`everink2025computational`
 - Paper code GitHub repository: https://github.com/CUQI-DTU/Paper-Implicit
-- Book chapter on implicit priors: [Chapter 10](..//chapter01_m/chapter01_m.md)
-
+- Book chapter on implicit priors: {ref}`implicit-prior-chapter`
