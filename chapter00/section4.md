@@ -44,6 +44,7 @@ test
 - [@bardsley2018computational]
 - [e.g. @bardsley2018computational, sec. 4.1]
 - @bardsley2018computational [pg. 22]
+test 
 
 It is often necessary to extend the simple Gaussian prior in \eqref{eq:Gprior}
 to a prior of the form
