@@ -17,7 +17,7 @@ $$f(t) = \alpha\, t + \beta \ ,$$
 where the two parameters $\alpha$ and $\beta$ are unknown. We assume that the noisy data $(t_i,y_i)$, $i=1,2,\ldots,m$ are given by
 $$    y_i = f(t_i) + e_i = \alpha\, t_i + \beta + e_i \qquad
     \hbox{with} \qquad e_i \sim \mathcal{N}(0,\sigma^2) \ ,$$
-and our task is to estimate the two unknown parameters. Since the noise is independent and identically distributed (iid) Gaussian with variance $\sigma^2$, it is natural to use the method of least squares estimation [bjorck2024numerical, hansen2013least]. The least squares estimates $a_{\hbox{\tiny LS}}$ and $b_{\hbox{\tiny LS}}$ are given by
+and our task is to estimate the two unknown parameters. Since the noise is independent and identically distributed (iid) Gaussian with variance $\sigma^2$, it is natural to use the method of least squares estimation [@bjorck2024numerical; @hansen2013least]. The least squares estimates $a_{\hbox{\tiny LS}}$ and $b_{\hbox{\tiny LS}}$ are given by
 $$
     \alpha_{\hbox{\tiny LS}} = \frac{\sum_{i=1}^m (t_i-\bar{t})(y_i-\bar{y})}%
     {\sum_{i=1}^m (t_i-\bar{t})^2} \ , \qquad
