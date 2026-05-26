@@ -39,6 +39,7 @@ if we set $\lambda = \sigma/\delta$ (see, [e.g. @bardsley2018computational, sec.
 Here we immediately recognize an advantage of the Bayesian formulation
 because it provides an explicit expression for the parameter $\lambda$.
 
+test 
 - @bardsley2018computational
 - [@bardsley2018computational]
 - [e.g. @bardsley2018computational, sec. 4.1]
