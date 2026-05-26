@@ -35,7 +35,7 @@ Specifically, the maximum a posterior (MAP) estimate of $x$ - the one what maxim
 the posterior in \eqref{eq:Gpost} - is the one that minimizes the negative
 argument of the exponential function.
 This optimization problem is identical to the Tikhonov problem in \eqref{eq:Tikhonov}
-if we set $\lambda = \sigma/\delta$ (see, e.g., [Bar, \S 4.1]).
+if we set $\lambda = \sigma/\delta$ (see, [e.g. @bardsley2018computational, sec. 4.1]).
 Here we immediately recognize an advantage of the Bayesian formulation
 because it provides an explicit expression for the parameter $\lambda$.
 
