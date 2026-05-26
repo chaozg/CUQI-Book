@@ -32,14 +32,14 @@ $$
 
 We immediately notice a resemblance with Tikhonov regularization mentioned above.
 Specifically, the maximum a posterior (MAP) estimate of $x$ - the one what maximizes
-the posterior in \eqref{eq:Gpost} - is the one that minimizes the negative
+the posterior in {eq}`eq:Gpost` - is the one that minimizes the negative
 argument of the exponential function.
-This optimization problem is identical to the Tikhonov problem in \eqref{eq:Tikhonov}
+This optimization problem is identical to the Tikhonov problem in {eq}`eq:Tikhonov`
 if we set $\lambda = \sigma/\delta$ (see, e.g. @bardsley2018computational [sec. 4.1]).
 Here we immediately recognize an advantage of the Bayesian formulation
 because it provides an explicit expression for the parameter $\lambda$.
 
-It is often necessary to extend the simple Gaussian prior in \eqref{eq:Gprior}
+It is often necessary to extend the simple Gaussian prior in {eq}`eq:Gprior`
 to a prior of the form
 $$
     \pi(x) \propto \exp\left( - \frac{\| D\, (x-\bar{x}) \|_2^2}{2\delta^2} \right) \ ,
@@ -54,7 +54,7 @@ The use of $D$ is covered in Chapter/Section {\color{magenta}NNN}.
 we return to the linear regression problem
 from Example 1 for which the two least squares estimates
 are quite correlated and having large uncertainties.
-We choose a Gaussian prior \eqref{eq:Gprior} with $\delta = 0.4$.
+We choose a Gaussian prior {eq}`eq:Gprior` with $\delta = 0.4$.
 Then the MAP estimate and the covariance matrix are
 $$
     \alpha_{\hbox{\tiny MAP}} = 0.71 \ , \qquad
