@@ -35,7 +35,7 @@ Specifically, the maximum a posterior (MAP) estimate of $x$ - the one what maxim
 the posterior in \eqref{eq:Gpost} - is the one that minimizes the negative
 argument of the exponential function.
 This optimization problem is identical to the Tikhonov problem in \eqref{eq:Tikhonov}
-if we set $\lambda = \sigma/\delta$ (see, [e.g. @bardsley2018computational, sec. 4.1]).
+if we set $\lambda = \sigma/\delta$ (see, e.g. @bardsley2018computational [sec. 4.1]).
 Here we immediately recognize an advantage of the Bayesian formulation
 because it provides an explicit expression for the parameter $\lambda$.
 
@@ -54,7 +54,7 @@ $$
 where $\bar{x}$ is the prior mean and $D$ is a suitably chosen matrix
 that is used to tailor the prior to our needs.
 For example, we can impose smoothness (or regularity) of $x$ by
-choosing $D$ as a discretization to a derivative operator; see [Bar \S 4.2] for details.
+choosing $D$ as a discretization to a derivative operator; see @bardsley2018computational [sec. 4.2] for details.
 The use of $D$ is covered in Chapter/Section {\color{magenta}NNN}.
 
 **Example 3: Linear regression with a Gaussian prior.** To illustrate the role of the prior,

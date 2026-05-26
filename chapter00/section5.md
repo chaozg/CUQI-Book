@@ -56,7 +56,7 @@ We compute 50,000 samples of the posterior using the
 Metropolis-Hasting sampling method - see Chapter XXX
 for a discussion of this sampling method.
 
-The first prior was suggested in [Estimating], and we assume that $g$ and $C$
+The first prior was suggested in @allmaras2013estimating, and we assume that $g$ and $C$
 are *uniformly distributed*
 in the intervals $[8,12]$ and $[0.01,0.25]$, respectively.
 The main role of this prior is to ensure positive estimates, which are

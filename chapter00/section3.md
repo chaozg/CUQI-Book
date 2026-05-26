@@ -18,7 +18,7 @@ If the solution is known to be periodic then we should use a
 trigonometric basis.
 
 One way to impose such prior information is to use a method called
-regularization [H10, N98], where we minimize a linear combination of
+regularization [@hansen2010discrete, @neumaier1998solving], where we minimize a linear combination of
 a data-fitting term and a regularization term that
 penalizes solutions that do not adhere to the prior information.
 As an example we mention Tikhonov regularization, which some readers may
@@ -50,7 +50,7 @@ $$
     L(x \mid b=b_{\mathrm{obs}}) \propto \exp\biggl( - \frac{\|A\, x-b_{\mathrm{obs}}\|_2^2}{2\,\sigma^2} \biggr)\ .
 $$
 
-**Prior $\pi(x).$** This is a distribution that expresses our knowledge, or belief, about the solution $x$ to the inverse problem. In Bayesian inverse problems it is used to enforce that we prefer solutions that adhere to our prior knowledge, and it plays the same role as the regularization term in classical regularization methods. The prior may be determined from past information or previous experiments, or it can express a subjective assessment of a domain expert [Rob, Chapter 3].
+**Prior $\pi(x).$** This is a distribution that expresses our knowledge, or belief, about the solution $x$ to the inverse problem. In Bayesian inverse problems it is used to enforce that we prefer solutions that adhere to our prior knowledge, and it plays the same role as the regularization term in classical regularization methods. The prior may be determined from past information or previous experiments, or it can express a subjective assessment of a domain expert @robert2007bayesian [Ch. 3].
 
 **Posterior $\pi(x | b_{\mathrm{obs}}).$** This distribution expresses the probability of $x$ according to the measured data as well as our prior information. Hence, it is conditioned on $b_{\mathrm{obs}}$ and it expresses what is known about the solution after the data has been collected and the prior is imposed. The aim of a Bayesian inverse problem is to characterize and compute this probability.
 
