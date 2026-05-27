@@ -35,9 +35,9 @@ The flexibility of regularization methods lies in the fact that
 we can often find regularization terms (such as $\| x \|_2^2$)
 that correspond to our prior information.
 
-A different approach to solving inverse problem - which is the one that underlies uncertainty quantification and CUQIpy - is to formulate the inverse problem in a statistical framework in the form of a **Bayesian inverse problem**. Here, both the data $b$ and the solution $x$ are considered to be a random variables. Unlike traditional regularization methods that seek a single solution, the Bayesian approach treats the inverse problem as a statistical question, producing a full probability distribution for the solution $x$. This is called the posterior and it accounts for observational noise, uses prior information about the solution, and provides a complete quantification of uncertainty in the solution. See, e.g., [CS] for details.
+A different approach to solving inverse problem - which is the one that underlies uncertainty quantification and CUQIpy - is to formulate the inverse problem in a statistical framework in the form of a **Bayesian inverse problem**. Here, both the data $b$ and the solution $x$ are considered to be a random variables. Unlike traditional regularization methods that seek a single solution, the Bayesian approach treats the inverse problem as a statistical question, producing a full probability distribution for the solution $x$. This is called the posterior and it accounts for observational noise, uses prior information about the solution, and provides a complete quantification of uncertainty in the solution. See, e.g., @calvetti2023bayesian for details.
 
-To understand Bayesian inverse problems and the way they are formulated and used in CUQIpy, we need to introduce four important statistical tools such that they are readily available in the rest of the book. See, e.g., [CS, Chapter1] for more details. For simplicity we consider the linear forward model $b = A\, x$ where $A$ is a matrix, $b$ is the measured data, and $x$ is the solution.
+To understand Bayesian inverse problems and the way they are formulated and used in CUQIpy, we need to introduce four important statistical tools such that they are readily available in the rest of the book. See, e.g., @calvetti2023bayesian [Ch. 1] for more details. For simplicity we consider the linear forward model $b = A\, x$ where $A$ is a matrix, $b$ is the measured data, and $x$ is the solution.
 
 **Data distribution** $\pi(b | x)$. This is a distribution that specifies how likely it is to observe the data $b$ given the parameter or parameter-vector $x$. A key point is that we assume the noisy data can be explained by a forward model (here $b = A\, x$), and therefore the data distribution is conditioned in the variable $x$. The second key point is that we assume a statistical description of the noise, and this assumption informs the specific expression for $\pi(b | x)$.
 
@@ -58,7 +58,7 @@ $$
 We note that some presentations of Bayesian inverse problems skip the introduction of the data distribution $\pi(b | x)$.
 We include it in CUQIpy and in this book, because we believe this makes it easier and more intuitive to formulate and understand how the forward model and the noise model enter the likelihood function.
 
-Given these important tools, **Bayes' theorem** from statistics (see, e.g., [CS, \S 1.2.2]) gives the following expression for the posterior:
+Given these important tools, **Bayes' theorem** from statistics (see, e.g., @calvetti2023bayesian [sec. 1.2.2]) gives the following expression for the posterior:
 $$
     \pi(x|b_{\mathrm{obs}}) = \frac{L(x | b=b_{\mathrm{obs}}) \, \pi(x)}{\pi(b)} \ .
 $$

@@ -30,7 +30,7 @@ to build a statistical "picture" of its uncertainty via estimates of
 variance, covariance, etc.
 There are many approaches and methods for sampling, and several of them are
 available in CUQIpy and described in later chapters.
-For more details, see, e.g., [CS, Chapter 4].
+For more details, see, e.g., @calvetti2023bayesian [Ch. 4].
 Below, we illustrate the concept of sampling with a few simple examples.
 
 **Example 4: Sampling the Gaussian likelihood in the linear regression problem.** We return to the problem from Example 3 with Gaussian noise and a Gaussian prior,
