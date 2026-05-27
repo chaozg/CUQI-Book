@@ -48,7 +48,7 @@ where $\bar{x}$ is the prior mean and $D$ is a suitably chosen matrix
 that is used to tailor the prior to our needs.
 For example, we can impose smoothness (or regularity) of $x$ by
 choosing $D$ as a discretization to a derivative operator; see @bardsley2018computational [sec. 4.2] for details.
-The use of $D$ is covered in Chapter/Section {\color{magenta}NNN}.
+<!-- The use of $D$ is covered in Chapter/Section {\color{magenta}NNN}. -->
 
 **Example 3: Linear regression with a Gaussian prior.** To illustrate the role of the prior,
 we return to the linear regression problem
