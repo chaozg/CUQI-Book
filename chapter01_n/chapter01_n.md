@@ -1,3 +1,3 @@
 #  Chapter 12: X-ray Computed Tomography (CT)
 
-> ⚠️ **Contents to be added:** add intro to the chapter. 
+In this chapter, we present the [CUQIpy-CIL plugin](https://github.com/CUQI-DTU/CUQIpy-CIL), which allows interfacing CUQIpy with the [Core Imaging Library (CIL)](https://tomographicimaging.github.io/CIL/) for Computed Tomography (CT) problems. We illustrate setting up and solving a CT BIP in CUQIpy using the CUQIpy-CIL plugin, and compare the results with a deterministic solution obtained by CIL.
