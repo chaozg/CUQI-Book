@@ -1,3 +1,3 @@
 # Chapter 7: More on CUQIpy technical details
 
->⚠️ **Contents to be added:** Add intro to the chapter. We can also add links to documentation and howtos to refer the user for more technical details.
+This chapter discusses some technical details of CUQIpy for further reference. We discuss in particular the concept of `geometries` in CUQIpy. The reader can also refer to CUQIpy documentation for [API reference](https://cuqi-dtu.github.io/CUQIpy/api/index.html) and additional [how-to guides](https://cuqi-dtu.github.io/CUQIpy/user/_auto_howtos/index.html) for more technical demonstrations.
