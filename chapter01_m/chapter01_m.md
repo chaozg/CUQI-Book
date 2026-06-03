@@ -1,4 +1,7 @@
 ---
+numbering:
+  equation:
+    continue: false
 authors:
   - name: Jasper Everink
 ---

@@ -1,3 +1,9 @@
+---
+numbering:
+  equation:
+    continue: false
+---
+
 # Chapter 16: Resources and bibliography
 
 Following are lists of resources and references for further reading and exploration of CUQIpy and related topics.

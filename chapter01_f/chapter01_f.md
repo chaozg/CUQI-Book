@@ -1,3 +1,9 @@
+---
+numbering:
+  equation:
+    continue: false
+---
+
 # Chapter 7: More on CUQIpy technical details
 
 This chapter discusses some technical details of CUQIpy for further reference. We discuss in particular the concept of `geometries` in CUQIpy. The reader can also refer to CUQIpy documentation for [API reference](https://cuqi-dtu.github.io/CUQIpy/api/index.html) and additional [how-to guides](https://cuqi-dtu.github.io/CUQIpy/user/_auto_howtos/index.html) for more technical demonstrations.

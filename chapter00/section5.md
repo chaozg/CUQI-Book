@@ -30,7 +30,7 @@ to build a statistical "picture" of its uncertainty via estimates of
 variance, covariance, etc.
 There are many approaches and methods for sampling, and several of them are
 available in CUQIpy and described in later chapters.
-For more details, see, e.g., [CS, Chapter 4].
+For more details, see, e.g., @calvetti2023bayesian [Ch. 4].
 Below, we illustrate the concept of sampling with a few simple examples.
 
 **Example 4: Sampling the Gaussian likelihood in the linear regression problem.** We return to the problem from Example 3 with Gaussian noise and a Gaussian prior,
@@ -53,10 +53,10 @@ there is no simple analytical expression for the posterior.
 We use the test problem from Example 2 with the same Gaussian noise and the same
 parameters, and with two different priors.
 We compute 50,000 samples of the posterior using the
-Metropolis-Hasting sampling method - see Chapter XXX
+Metropolis-Hasting sampling method - see {ref}`sampling-with-cuqipy`
 for a discussion of this sampling method.
 
-The first prior was suggested in [Estimating], and we assume that $g$ and $C$
+The first prior was suggested in @allmaras2013estimating, and we assume that $g$ and $C$
 are *uniformly distributed*
 in the intervals $[8,12]$ and $[0.01,0.25]$, respectively.
 The main role of this prior is to ensure positive estimates, which are
