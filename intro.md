@@ -3,7 +3,7 @@
 Welcome to the book on "Uncertainty Quantification in Inverse Problems with CUQIpy".
 This book contains training material on how to use the [CUQIpy](https://github.com/CUQI-DTU/CUQIpy) library for uncertainty quantification in inverse problems. It also covers some of the theoretical background behind the methods implemented in CUQIpy.
 
-> ⚠️ **Disclaimer:** The code in this book runs without a fixed random seed, so results will vary with each re-compilation and user run. While conclusions should remain consistent, specific values may differ due to the probabilistic nature of Bayesian sampling, which is fundamental when working with uncertainty quantification.
+> **Note:** The code in this book runs without a fixed random seed, so results will vary with each re-compilation and user run. While conclusions should remain consistent, specific values may differ due to the probabilistic nature of Bayesian sampling, which is fundamental when working with uncertainty quantification.
 
 ## Table of contents
 
@@ -19,8 +19,12 @@ This book contains training material on how to use the [CUQIpy](https://github.c
 
 - [Chao Zhang](https://github.com/chaozg)
 
-- [Felipe Uribe](https://github.com/furibec)
+- [Per Christian Hansen](https://orbit.dtu.dk/en/persons/per-christian-hansen/)
 
 - [Jasper M. Everink](https://github.com/jeverink)
 
+- [Felipe Uribe](https://github.com/furibec)
+
 - [Silja L. Christensen](https://github.com/siljachr)
+
+- [Rémi Laumont](https://github.com/remilaumont)
