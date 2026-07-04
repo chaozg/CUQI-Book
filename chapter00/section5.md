@@ -126,7 +126,7 @@ that puts a lot of emphasis on the mean because the posterior is
 now dominated by the prior.
 This is all good if the mean if well chosen - but it can also be
 dangerous if we have too much confidence in a bad prior that does not
-reflect reality.
+reflect reality. A full implementation of the falling object problem in CUQIpy can be found in the appendix at {ref}`falling_object_demo`.
 
 **Example 6. Sampling with a bad prior.** We return to the example with the falling object with a
 truncated Gaussian distribution for the prior, and

@@ -102,9 +102,13 @@ project:
             - file: chapter01_q/chapter01_q_ca.md
             - file: chapter01_q/chapter01_q_gp.md
         - file: chapter08/chapter08.md #ch15
+    - title: "Appendix"
+      children:
+        - file: appendix/intro_falling_object.ipynb
 site:
   options:
     logo: images/logo.png
+    favicon: images/favicon.ico
     #folders: true # comment this out to fix tableofcontents links.
     # As a side effect, this sitting will not maintain folder structure
     # in the book pages link
