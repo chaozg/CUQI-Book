@@ -102,6 +102,11 @@ project:
             - file: chapter_research_based_on_cuqipy/cochlear_aqueduct.md
             - file: chapter_research_based_on_cuqipy/monotonic_gp_rto.md
         - file: chapter_resources_bibliography/index.md #ch16
+
+
+    - title: "Appendix"
+      children:
+        - file: appendix/intro_falling_object.ipynb
 site:
   options:
     logo: images/logo.png
