@@ -87,7 +87,7 @@ project:
         - file: chapter_pde_based_bip/index.md #ch13
           children:
             - file: chapter_pde_based_bip/core_pde.ipynb
-            - file: chapter_pde_based_bip/poisson_2D_fenics.ipynb
+            - file: chapter_pde_based_bip/CUQIpy-FEniCS-example/poisson_2D_fenics.ipynb
         - file: chapter_applications_benchmarks/index.md #ch14
           children:
             - file: chapter_applications_benchmarks/user_showcase_collection.md
