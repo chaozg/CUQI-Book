@@ -25,86 +25,83 @@ project:
     - file: intro.md
     - title: "Part I: Foundations of CUQIpy and Bayesian Inverse Problems"
       children:
-        - file: chapter00/chapter00.md #ch1
+        - file: chapter_intro_uq_priors_bips/index.md #ch1
           children:
-            - file: chapter00/section1.md
-            - file: chapter00/section2.md
-            - file: chapter00/section3.md
-            - file: chapter00/section4.md
-            - file: chapter00/section5.md
-        - file: chapter01/chapter01.md #ch1
+            - file: chapter_intro_uq_priors_bips/section1.md
+            - file: chapter_intro_uq_priors_bips/section2.md
+            - file: chapter_intro_uq_priors_bips/section3.md
+            - file: chapter_intro_uq_priors_bips/section4.md
+            - file: chapter_intro_uq_priors_bips/section5.md
+        - file: chapter_intro_cuqipy/index.md #ch2
           children:
-            - file: chapter01/overview_of_cuqipy.md
-            - file: chapter01/run_mini_book.md
-        - file: chapter01_b/chapter01_b.md #ch2
+            - file: chapter_intro_cuqipy/overview_of_cuqipy.md
+            - file: chapter_intro_cuqipy/run_mini_book.md
+        - file: chapter_intro_cuqipy_bip/index.md #ch3
           children:
-            - file: chapter01/intro_example_short.ipynb
-            - file: chapter01/intro_example_long.ipynb
-        - file: chapter01_c/chapter01_c.md #ch3
+            - file: chapter_intro_cuqipy_bip/intro_example_short.ipynb
+            - file: chapter_intro_cuqipy_bip/intro_example_long.ipynb
+        - file: chapter_distributions_random_variables_priors/index.md #ch4
           children:
-            - file: chapter03/basics_distributions.ipynb
-            - file: chapter02/dist_gallery.ipynb
-            - file: chapter06/markov_random_fields.ipynb
-            - file: chapter01_c/chapter01_c_Random_variables_and_hierarchical_priors.md
-            - file: chapter01_c/chapter01_c_Implicit_priors.md
-            - file: chapter06/entropy.ipynb
-        - file: chapter01_d/chapter01_d.md #ch4
+            - file: chapter_distributions_random_variables_priors/basics_distributions.ipynb
+            - file: chapter_distributions_random_variables_priors/dist_gallery.ipynb
+            - file: chapter_distributions_random_variables_priors/markov_random_fields.ipynb
+            - file: chapter_distributions_random_variables_priors/random_variables_and_hierarchical_priors.md
+            - file: chapter_distributions_random_variables_priors/implicit_priors.md
+            - file: chapter_distributions_random_variables_priors/entropy.ipynb
+        - file: chapter_forward_models_likelihood/index.md #ch5
           children:
-            - file: chapter03/basics_forward_models.ipynb
-            - file: chapter03/basics_forward_UQ.ipynb
-            - file: chapter02/two_forward_problems.ipynb
-        - file: chapter01_e/chapter01_e.md #ch5
+            - file: chapter_forward_models_likelihood/basics_forward_models.ipynb
+            - file: chapter_forward_models_likelihood/basics_forward_UQ.ipynb
+            - file: chapter_forward_models_likelihood/two_forward_problems.ipynb
+        - file: chapter_solving_bips/index.md #ch6
           children:
-            - file: chapter03/basics_bayesian_inverse_problems.ipynb
-            - file: chapter02/two_target_distributions.ipynb
-        - file: chapter01_f/chapter01_f.md #ch6
+            - file: chapter_solving_bips/basics_bayesian_inverse_problems.ipynb
+            - file: chapter_solving_bips/two_target_distributions.ipynb
+        - file: chapter_cuqipy_technical_details/index.md #ch7
           children:
-            - file: chapter05/geometries_in_cuqipy.ipynb
+            - file: chapter_cuqipy_technical_details/geometries_in_cuqipy.ipynb
 
     - title: "Part II: Inference and Sampling Methods"  
       children:
-        - file: chapter01_g/chapter01_g.md #ch7
+        - file: chapter_sampling_background/index.md #ch8
           children:
-            - file: chapter07/more_theory_on_sampling_with_cuqipy.ipynb
-        - file: chapter01_h/chapter01_h.md #ch8
+            - file: chapter_sampling_background/more_theory_on_sampling_with_cuqipy.ipynb
+        - file: chapter_hybrid_gibbs_sampling/index.md #ch9
           children:
-            - file: chapter04/gibbs.ipynb
-            - file: chapter01_h/multiple_input.ipynb
-        - file: chapter01_k/chapter01_k.md #ch9
+            - file: chapter_hybrid_gibbs_sampling/gibbs.ipynb
+            - file: chapter_hybrid_gibbs_sampling/multiple_input.ipynb
+        - file: chapter_sampling_pytorch/index.md #ch10
           children:
-            - file: chapter04/Plugins/CUQIpy-PyTorch/hmc.ipynb
-        - file: chapter01_m/chapter01_m.md #ch10
+            - file: chapter_sampling_pytorch/hmc.ipynb
+        - file: chapter_implicit_priors/index.md #ch11
           children:
-            - file: chapter01_m/example_rto.ipynb
-            - file: chapter01_m/CUQIpy-FEniCS-example/myula.ipynb
+            - file: chapter_implicit_priors/example_rto.ipynb
+            - file: chapter_implicit_priors/CUQIpy-FEniCS-example/myula.ipynb
 
 
     - title: "Part III: Applications and Research Using CUQIpy"
       children:
-        - file: chapter01_n/chapter01_n.md #ch11
+        - file: chapter_ct/index.md #ch12
           children:
-            - file: chapter04/Plugins/CUQIpy-CIL/demo_ct.ipynb
-        - file: chapter01_o/chapter01_o.md #ch12
+            - file: chapter_ct/demo_ct.ipynb
+        - file: chapter_pde_based_bip/index.md #ch13
           children:
-            - file: chapter04/PDE/core_pde.ipynb
-            - file: chapter04/Plugins/CUQIpy-FEniCS/poisson_2D_fenics.ipynb
-        - file: chapter01_p/chapter01_p.md #ch13
+            - file: chapter_pde_based_bip/core_pde.ipynb
+            - file: chapter_pde_based_bip/CUQIpy-FEniCS-example/poisson_2D_fenics.ipynb
+        - file: chapter_applications_benchmarks/index.md #ch14
           children:
-            - file: chapter01_p/chapter01_p_user_show_case.md
-            - file: chapter01_p/chapter01_p_benchmark.md
-        - file: chapter01_q/chapter01_q.md #ch14
+            - file: chapter_applications_benchmarks/user_showcase_collection.md
+            - file: chapter_applications_benchmarks/cuqipy_benchmarks.md
+        - file: chapter_research_based_on_cuqipy/index.md #ch15
           children:
-            - file: chapter01_q/chapter01_q_part1.md
-            - file: chapter01_q/chapter01_q_part2.md
-            - file: chapter01_q/chapter01_q_implicit.md
-            - file: chapter01_q/chapter01_uq_paper.md
-            - file: chapter01_q/chapter01_q_subseapipe.md
-            - file: chapter01_q/chapter01_q_ca.md
-            - file: chapter01_q/chapter01_q_gp.md
-        - file: chapter08/chapter08.md #ch15
-    - title: "Appendix"
-      children:
-        - file: appendix/intro_falling_object.ipynb
+            - file: chapter_research_based_on_cuqipy/cuqipy_core_paper.md
+            - file: chapter_research_based_on_cuqipy/cuqipy_pde_paper.md
+            - file: chapter_research_based_on_cuqipy/implicit_priors_paper.md
+            - file: chapter_research_based_on_cuqipy/umbridge_integration.md
+            - file: chapter_research_based_on_cuqipy/subsea_pipe_ct.md
+            - file: chapter_research_based_on_cuqipy/cochlear_aqueduct.md
+            - file: chapter_research_based_on_cuqipy/monotonic_gp_rto.md
+        - file: chapter_resources_bibliography/index.md #ch16
 site:
   options:
     logo: images/logo.png
