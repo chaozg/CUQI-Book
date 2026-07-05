@@ -1,7 +1,7 @@
 # 2. Running the book code examples
 
 
-Here we suggest the following options to run the code notebooks in this mini-book:
+We suggest the following options to run the code examples in this book:
 
 - Running on your local machine (preferred)
 - Running using the launch buttons (for quick exploration)
