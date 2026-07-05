@@ -27,11 +27,11 @@ project:
       children:
         - file: chapter_intro_uq_priors_bips/index.md #ch1
           children:
-            - file: chapter_intro_uq_priors_bips/section1.md
-            - file: chapter_intro_uq_priors_bips/section2.md
-            - file: chapter_intro_uq_priors_bips/section3.md
-            - file: chapter_intro_uq_priors_bips/section4.md
-            - file: chapter_intro_uq_priors_bips/section5.md
+            - file: chapter_intro_uq_priors_bips/errors_and_uncertainties.md
+            - file: chapter_intro_uq_priors_bips/inverse_problems_and_illposed_problems.md
+            - file: chapter_intro_uq_priors_bips/prior_and_bip.md
+            - file: chapter_intro_uq_priors_bips/gaussian_priors.md
+            - file: chapter_intro_uq_priors_bips/computational_uq.md
         - file: chapter_intro_cuqipy/index.md #ch2
           children:
             - file: chapter_intro_cuqipy/overview_of_cuqipy.md
