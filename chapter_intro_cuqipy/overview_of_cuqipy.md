@@ -11,7 +11,8 @@ CUQIpy framework enables:
 * Solving Bayesian inverse problems using classical as well as recent and advanced computational methods
 * Analyzing the solution, i.e., the posterior distribution, of Bayesian inverse problems
 
-The following figure is a schematic overview of the CUQIpy framework, which shows the main components of the framework and how they are connected. The user supplies the forward model (or alternatively uses one of the predefined forward models in CUQIpy), the data, and the statistical assumptions about the various unknown parameters and the data. The user then uses CUQIpy to model and solve the Bayesian inverse problem and to analyze and visualize the solution. 
+The following figure is a schematic overview of the CUQIpy framework, which shows the main components of the framework and how they are connected. The user supplies the forward model (or alternatively uses one of the predefined forward models in CUQIpy), the data, and the statistical assumptions about the various unknown parameters and the data. The user then uses CUQIpy to model and solve the Bayesian inverse problem and to analyze and visualize the solution.
+
 ![CUQIpy overview](images/cuqipy_diagram.png)
 
 
